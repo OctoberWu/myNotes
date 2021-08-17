@@ -1,7 +1,4 @@
-
-
-
-### Sub-Module
+### Git Sub-Module
 
 #### to add submodule (new submodule)
 $git add submodule
