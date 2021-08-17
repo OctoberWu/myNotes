@@ -1,0 +1,123 @@
+[0.171s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/sc/myNotes']
+[0.171s] DEBUG:colcon:Parsed command line arguments: Namespace(base_paths=['/home/sc/myNotes'], build_base='build', ignore_user_meta=False, log_base=None, log_level=None, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f0797defca0>>, metas=['./colcon.meta'], names_only=False, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, paths=None, paths_only=True, topological_graph=False, topological_graph_density=False, topological_graph_dot=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, topological_graph_legend=False, topological_order=False, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f0797defca0>, verb_name='list', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f0797cd96d0>)
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.215s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sc/myNotes'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extension 'ros'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extensions ['cmake', 'python']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extension 'cmake'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extension 'python'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extensions ['python_setup_py']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extension 'ros'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extensions ['cmake', 'python']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extension 'cmake'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extension 'python'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extensions ['python_setup_py']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Installations) by extension 'python_setup_py'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extension 'ros'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extensions ['cmake', 'python']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extension 'cmake'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extension 'python'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extensions ['python_setup_py']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/UMLs) by extension 'python_setup_py'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extension 'ros'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extensions ['cmake', 'python']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extension 'cmake'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extension 'python'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extensions ['python_setup_py']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/Utilities) by extension 'python_setup_py'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extension 'ros'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extensions ['cmake', 'python']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extension 'cmake'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/dev_libxml_parser) by extension 'python'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package '/home/sc/myNotes/dev_libxml_parser' with type 'cmake' and name 'env_builder'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extension 'ros'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extensions ['cmake', 'python']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/doc) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extension 'ros'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extensions ['cmake', 'python']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extension 'cmake'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extension 'python'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extensions ['python_setup_py']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/easel_demo) by extension 'python_setup_py'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extension 'ros'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extensions ['cmake', 'python']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extension 'cmake'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extension 'python'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extensions ['python_setup_py']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/graph_test) by extension 'python_setup_py'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/log) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/log) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sc/myNotes/log) ignored
+[0.242s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

@@ -1,7 +1,6 @@
 ##### Major
 
 ```txt
-
 Reviews of rmf_demo project.
 1. Task Queue in AMR level, not in Fleet level.
 Description: The task queue should be fleet level, so that the task and/or resource allcation would be realized.
@@ -29,8 +28,6 @@ Task scheduling
 聽起來，是task 有執行時間的限制。
 
 ![](./doc/task_scheduling.png)
-
-
 ```
 
 ##### Minor
