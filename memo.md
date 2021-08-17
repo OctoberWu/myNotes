@@ -1,4 +1,3 @@
-
 ## current technology
 how the problem to the solved
 how to improve
@@ -11,11 +10,6 @@ something patentable,
 * pain points to be solved.
 * defined by role, not robot.
 * FTO
-
-給一個例子，如何解決問題。 每個技術都有要解決的技術問題。
-透過identify problem, 再去廣泛搜尋patent機會
-
-
 
 ## UI spec
 * 主畫面 (Pages)
