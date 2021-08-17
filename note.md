@@ -1,0 +1,549 @@
+富鴻網
+
+自動化倉儲
+
+WCS 自動控制系統 (Robot 電梯)
+EAP電子揀貨系統
+
+產品 or 方案？
+Single window, trustful, recognized 
+
+1.
+Miniload AMR, crash SAS
+LifeCycle
+ - payload, fork, 3d camera
+
+2. 
+latent AGV sys.訂單到人
+part to picker
+
+3. 
+pick to Light sys. sas
+
+少量多樣，彈性多樣。
+
+turn op rate
+
+AS/RS crane 天橋
+
+WMS 倉儲管理
+WCS 倉儲控制
+EAP(semi-condicutor)
+
+
+地圖
+
+
+* 搬運流程編成系統
+  - 地圖設計
+  - 動線規劃
+  - 流程編排 
+* 後台管理系統
+* 智能調度
+  - 交通調度
+  - 作業調度
+  - 庫位優化
+* 智能模組
+貨到人
+p2p搬運
+拆舵碼舵
+訂單道人
+
+
+倣真模逆
+- 機器人模擬
+- 人員模擬
+- 訂單模擬
+機器人控制管理
+
+
+Needs:
+AMR with cobot (omron)
+multi-AMR Control
+
+1. 雲端即時監控
+2. 多車聯控
+3. 拖拉式編程
+4. 策略管理
+
+
+跟應用性(精度)
+高價格
+
+EDM, target market
+Electrical Device Manufacturing
+
+倉儲
+
+系統產品
+
+prototypized PM
+
+
+1. Monitor
+2. Assigment
+3. API (Web)
+
+系統畫面
+
+德國林德差車
+semi-2
+
+充電時間 40分鐘以內 110v
+20V 220V 鈦酸鋰電池（鋰鐵fail 快充）
+
+group 下來的任務，決定要不要grouping
+
+斜坡失速狀況，台車
+離地不免被台車拖著走。
+情境，與台車使用的情境。
+
+
+
+
+
+neuron SDK 相關工具 
+ex. 
+1. Cyclone dds 無線
+2. Deployment 工具 ROS2 跟控制相關的工具 
+
+
+
+
+
+
+
+**traffic_editor** and **building_map_toolspackages** in https://github.com/osrf/traffic_editor
+
+Traffic Schedule Database
+
+ robot traffic monitoring and resolving conflicts or dead-locks that may arise between robots or fleets of robots that are unaware of each other's presence
+
+* Traffic Editor
+Responsive UI (laptop, pad, phone)
+
+
+
+
+### Questions:
+* Who are our target customers
+* Priority depends on customer perspective or product perspective
+
+
+
+task_manager的api
+原生 or extended
+
+
+
+### Farobot Future Plan
+1. 場域需求。產品為目標 Outside In
+2. Q3前機器人上市。
+3. 安傑倫雲服務。得到5~10間公司需求，再做收斂。
+
+
+
+WMS
+* Register 
+
+
+RCS
+* graph generator
+* traffic
+
+
+
+
+* push_back how to deal with memory from interface
+copy or reference?
+
+
+
+if CMake doesn't find the path
+https://stackoverflow.com/questions/49816206/cmake-find-package-specify-path
+https://cmake.org/cmake/help/latest/command/find_package.html
+
+
+official way:
+```
+find_package (<package> PATHS paths... NO_DEFAULT_PATH)
+find_package (<package>)
+```
+
+feasible way:
+```cmake
+set set(SDL2_DIR /usr/local/lib/cmake/SDL2) 
+find_package(SDL2 REQUIRED)
+```
+
+FLeet 機械手臂
+
+
+
+### 20200910 MiR250 Training 
+MiR 100, 200 +-10cm 24V
+
+MiR 250
+Speed: 2m/s
+Precision: 5cm
+SICK: nanotype, 48V
+---
+Standard（參數不能改）
+Dynamic(針對場景修改參數)
+Shelf Carrier(頂昇)
+
+AP in the AMR, self-contained.
+
+1. 播放音效
+2. 切換地圖 (Redo intial pose. Align laser and map)
+3. IO模組
+
+
+* 地圖 > 點位 > 邏輯
+給起點跟終點，自己計算路徑。可以dummy點(中繼點)，作路徑規劃。
+
+- Features
+機器人佔地面積(foot-print)。可即時修改佔地面積。
+
+##### 監控
+下了幾次命令，成功幾次。僅能在系統上看。
+錯誤日誌：回報車子的狀況
+系統生成 
+手動生成 > 在原廠系統作錯誤追蹤。
+
+##### 安全系統
+- Features
+顯示掃描即時狀況，在安全範圍最後一層。
+
+##### 任務日誌 
+- Misc.
+系統>設置。設定完須重新開機
+
+- Software Function
+**2 SLAM modes**
+Hector     : 100*100m 的地圖
+cartograph : 掃很大的地圖
+
+### Hardware Specification
+- 電池 MiR250 
+只有一顆，其他型號有兩顆。
+
+- 校準，單位公分
+作單台的精度校正。offset
+板金定位 提供圖面 由客戶加工
+V, L, VL +- 1cm  1度 
+
+
+車隊。全部都跑同一張地圖。
+針對車子作誤差的修正
+
+板金的位置，要放在機器人的前面。是用機器人的前面作的。停在物件的前方多遠？按經驗，**半個車身**才能測到VL
+機械手臂，Conveyor的高精度要求場域
+
+UR 機械手臂的對接 **ROS-I的開發需求。**
+最適配的選擇，網路設定等
+PLC 暫存器的設定
+
+#### 軟體更新
+0. Backup
+1. Upload
+2. Reload
+
+Can't downgrade, but reload backup.
+
+#### 所有東西跟地圖跑
+1. Create Map
+2. Load waypoints
+3. Load task
+
+站點。大樓 可以存10層樓地圖資訊
+
+- Function
+下載地圖，只是png
+export 整包的資訊
+
+手動。按下重新啟動後，轉一下key，開始啟動。
+
+#### laser interference
+1. In practice, the interfaces hanppens
+in a narrow hallway. the interference exists.
+
+
+##### 手選路線
+盡可能按照路線作移動。
+
+- Features
+到特定區域時，觸發IO
+
+- 使用邏輯
+##### 程式編輯，目前有100多行，暫無行數限制。
+REST API 可進行更為複雜的程式編輯
+可作子任務的調用
+
+- Error Handling
+會一直繞圈圈 > 停止下放指令。
+出現錯誤訊息後，到錯誤訊息，把紀錄下下來回覆原廠。
+
+
+##### 
+車隊的版本跟機器人的版本要一致
+
+- Operating Procedure
+第1台不勾，第2台要
+Factory reset the robot before 
+
+
+### 派車前要作儀表板
+limit queues on AMRs at certain cirteria.
+
+
+#### ROS_API 
+多機任務
+單個任務，派放任務給單機
+async task，必須單機派放。
+
+#### PLC and remote IO
+無塵認證；安規認證
+友達嚴格，國產燒掉。無塵室須重建。
+電池認證、車體的認證。
+
+自動切地圖。
+站點綁地圖，當站點在任務程序中切換時，轉換成相應的地圖。
+
+
+
+
+
+
+
+
+
+
+
+### zsh with vim-mode
+```sh
+$bindkey -v
+```
+
+### [byobu] How do I change the default shell used in Byobu (tmux)?
+
+Put the following in your $HOME/.byobu/.tmux.conf:
+
+set -g default-shell /usr/bin/zsh
+set -g default-command /usr/bin/zsh
+
+### Zsh Installation
+- ZSH Installation:
+```sh
+sudo apt install zsh
+sudo apt-get install powerline fonts-powerline
+```
+- Oh-My-Zsh Installation:
+```sh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+```
+- Set Zsh as the default Shell:
+```sh
+chsh -s /bin/zsh
+```
+Install additional plugins (syntax highlight, auto complete):
+```sh
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
+Enable the plugins:
+Open the file ~/.zshrc, locate the line that says: plugins=(git). And replace it as: plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+- If you want to change back to Bash:
+```sh
+chsh -s /bin/bash
+```
+
+
+###
+```sh
+git clone --single-branch --branch dev https://shihchiang@bitbucket.org/farobot/far_amr_ws.git
+```
+
+### stand up meeting
+#### demo workflow
+1. the robot names confirmation > FABO 
+2. the routes and the script already confirmed
+3. do charging. Assign the task by task editor. charge is on-demand? just showcase?
+
+#### 
+1. navigation crash
+2. BT navigator crash, but not find which part, gdb
+3. When can will the multiple
+on-site hard to do the valid version. 
+Need a stable and final to deploy.
+PE cover removed, lidar problem is solved.
+
+Check the code on far_amr_ws
+
+Issue code
+Branching model
+
+
+
+
+# quick test for 500 hundred messages testing 
+### Test List
+1. amcl goes crazy
+2. mileage  
+3. C++17 optional
+
+3. When the number of task goes enomous, what will happend to the task list, overflow?
+4. How many are the interfaces
+
+
+#### The Number Test
+- the number in task list goes up.
+- Number of Completed task
+- the number of AMRs abnormally.
+- Queue, 
+ 
+#### The Range(Dimension, size) Test
+- The percentage of battery ( under 0, over 100)
+- The mileage goes negative, or extreme large.
+#### The frequency Test
+- Remapping process (How to switch map efficiently)
+
+#### Invalid BT format
+
+
+## To S-sub:
+1. the number limitation of task list?
+
+
+Swarm Robotics 的優勢
+![](/doc/HuaWeiAMR.png)
+[探析華為內部移動機器人（AGV）應用現狀](https://kknews.cc/zh-tw/tech/rj2va44.html)
+
+you are not controlling robots, but the production process workflow.
+you should not take care how to control robot, but organize the production process
+Pick, Pack Sorting, distributing, segregation
+
+It doesn't matter who I am underneath, but what I do that defines me. Behavoir-oriented
+
+Granular tracking, shipping, storing, and inventory management
+
+
+### anthor writing style:
+```python
+    ld = LaunchDescription()
+
+    config = os.path.join(
+        get_package_share_directory('far_task_runner'),
+        'config',
+        'farobot_params.yaml'
+    )
+
+
+    node = launch_ros.actions.Node(
+        package='far_task_runner',
+        node_executable='far_task_runner_node',
+        parameters=[config],
+        output='screen',
+    )
+
+    ld.add_action(node)
+    return l
+```
+
+robot mode
+
+* Task Dispatching Logic
+1. Check the robot state(IDLE, or Working[Move, Pause], Fail[Abort])
+1-1. if IDLE
+    Check default task_id(Yes, No)
+        Yes case: Switch Task from working to complete, Do task dispatching  
+        No  case: Do task dispatching,   
+
+1-2. If Emergency (Fail Over)
+    Check default task_id(Yes, No)
+        Yes case: Task transfer  
+        No  case: Show Warning,   
+
+2-1. Task Dispatching (On Demand)
+    New Task is available(Yes, No)
+        Yes case: Task transfer  
+        No  case: None,   
+
+1. ROBOT_MODE_IDLE + No    task_id + got task_id > Wait for dispatching
+1. ROBOT_MODE_IDLE + Has-a task_id + got task_id > Wait for dispatching
+
+
+### GUID/UUID
+GUID: Globally-Unique IDentifiers 
+UUID: Universally Unique IDentifiers
+
+UUID 包含 32 個十六進位數字，並用「-」分隔成五組，每組分別有8、4、4、4、12的數字。例如：「550e8400-e29b-41d4-a716-446655440000」是一組完整的 UUID。
+
+#### Method1
+```javascript
+function _uuid() {
+  function s4() {
+    return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+  }
+  return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+}
+
+var uuid = _uuid(); //b3165466-df5b-c3d7-0e94-79d94e8c692f
+```
+cons:
+* 格式不符合 RFC4122 規範
+* Math.random() 產出的數字可能重覆 (collision)，儲存前必須做比對
+
+---
+
+#### Method2
+```javascript
+function _uuid() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {var r = Math.random()*16|0,v=c=='x'?r:r&0x3|0x8;return v.toString(16);});
+}
+
+var uuid = _uuid(); //5fc84f46-5743-4ed3-a94d-1ba63b8022a5f
+```
+pros:
+* 先擺好格式，再利用 Math.random() 產出任意數字填入格式中。這個方法解決了方法 1 的格式問題，
+cons:
+* 仍可能有 collision。
+
+---
+
+#### Method3
+```javascript
+function _uuid() {
+  var d = Date.now();
+  if (typeof performance !== 'undefined' && typeof performance.now === 'function'){
+    d += performance.now(); //use high-precision timer if available
+  }
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    var r = (d + Math.random() * 16) % 16 | 0;
+    d = Math.floor(d / 16);
+      return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+  });
+}
+```
+* 結合 time stamp 與方法 2，同時解決了格式和 collision 問題。
+* 加上 Performance.now() (亞毫秒級的時間戳記)，很難產生 collision。
+* 主流瀏覽器皆支援，但 IE 只支援 10 以上或 Edge。
+
+
+
+
+
+
+
+[如何用 JavaScript 產生 UUID / GUID？](https://cythilya.github.io/2017/03/12/uuid/)
+
+
+
+火鍋106-粵式豬肚雞煲鍋光復店   11:30
+忻殿堂南洋叻沙鍋物 12:00  4.8 
+https://nikki20100403.pixnet.net/blog/post/485891333-%E5%8F%B0%E5%8C%97%E6%9D%B1%E5%8D%80%E7%81%AB%E9%8D%8B%E6%8E%A8%E8%96%A6-%E5%BF%BB%E6%AE%BF%E5%A0%82%E5%8D%97%E6%B4%8B%E5%8F%BB%E6%B2%99%E9%8D%8B%E7%89%A9-%E5%8F%B0%E5%8C%97
+
+https://www.mecocute.com/taipei-eat-hotpot/
+
