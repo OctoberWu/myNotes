@@ -25,7 +25,7 @@ The difference
 Taxonomy 分類
 
 Task scheduling
-聽起來，是task 有執行時間的限制。
+似乎 task 有執行時間的限制。
 
 ![](./doc/task_scheduling.png)
 ```
@@ -69,15 +69,6 @@ Demo
 
 Tech Day 討論
 https://youtu.be/tixx0WYbAcw
-
-S-sub
-1. 地圖細緻度
-2. scanner細緻度
-
-* action defined.
-* interrupt by priority.
-* create task, compose the combination.
-* FLM dispatch the AMR.(intelligently)
 
 ---
 
@@ -123,11 +114,6 @@ v0.3
 加入task queue的欄位
 報表資料，加上filter顯示已完成資料，不同機器人的紀錄。
 
-使用情境:
-1. Overview首頁。看地圖、機器人位置
-
-1. 進度
-2. 跟大家要討論的事項。
 
 ---
 
@@ -161,7 +147,6 @@ and new requirements come in from customers
 
 
 Design and Developement. 
-Do
 PC / Controller have define the specs. and how to integrate them.
 The computing ability estimation
 
