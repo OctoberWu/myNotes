@@ -1,7 +1,4 @@
-
-
-
-### Sub-Module
+### Git Sub-Module
 
 #### to add submodule (new submodule)
 $git add submodule
@@ -32,13 +29,9 @@ git submodule init：根據 .gitmodules 的名稱和 URL，將這些資訊註冊
 git submodule update：根據已註冊（也就是 .git/config ）的 submodule 進行更新，例如 clone 遺失的 submodule，也就是上一段講的方法，所以執行這個指令前最好加上 --init；
 git submodule sync：如果 submodule 的 remote URL 有變動，可以在 .gitmodules 修正 URL，然後執行這個指令，便會將 submodule 的 remote URL 更正。
 
-* While the repository is with submodules
-```sh
-$git clone --recursive
-```
 #### If the submodule is empty, fetch them by
 ```sh
-$git submodule update --init
+$git submodule update --init --recursive
 ```
 
 #### Update submodule

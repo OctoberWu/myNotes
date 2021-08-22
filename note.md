@@ -1,88 +1,3 @@
-富鴻網
-
-自動化倉儲
-
-WCS 自動控制系統 (Robot 電梯)
-EAP電子揀貨系統
-
-產品 or 方案？
-Single window, trustful, recognized 
-
-1.
-Miniload AMR, crash SAS
-LifeCycle
- - payload, fork, 3d camera
-
-2. 
-latent AGV sys.訂單到人
-part to picker
-
-3. 
-pick to Light sys. sas
-
-少量多樣，彈性多樣。
-
-turn op rate
-
-AS/RS crane 天橋
-
-WMS 倉儲管理
-WCS 倉儲控制
-EAP(semi-condicutor)
-
-
-地圖
-
-
-* 搬運流程編成系統
-  - 地圖設計
-  - 動線規劃
-  - 流程編排 
-* 後台管理系統
-* 智能調度
-  - 交通調度
-  - 作業調度
-  - 庫位優化
-* 智能模組
-貨到人
-p2p搬運
-拆舵碼舵
-訂單道人
-
-
-倣真模逆
-- 機器人模擬
-- 人員模擬
-- 訂單模擬
-機器人控制管理
-
-
-Needs:
-AMR with cobot (omron)
-multi-AMR Control
-
-1. 雲端即時監控
-2. 多車聯控
-3. 拖拉式編程
-4. 策略管理
-
-
-跟應用性(精度)
-高價格
-
-EDM, target market
-Electrical Device Manufacturing
-
-倉儲
-
-系統產品
-
-prototypized PM
-
-
-1. Monitor
-2. Assigment
-3. API (Web)
 
 系統畫面
 
@@ -97,7 +12,6 @@ group 下來的任務，決定要不要grouping
 斜坡失速狀況，台車
 離地不免被台車拖著走。
 情境，與台車使用的情境。
-
 
 
 
@@ -143,17 +57,6 @@ task_manager的api
 
 
 
-WMS
-* Register 
-
-
-RCS
-* graph generator
-* traffic
-
-
-
-
 * push_back how to deal with memory from interface
 copy or reference?
 
@@ -175,9 +78,6 @@ feasible way:
 set set(SDL2_DIR /usr/local/lib/cmake/SDL2) 
 find_package(SDL2 REQUIRED)
 ```
-
-FLeet 機械手臂
-
 
 
 ### 20200910 MiR250 Training 
@@ -309,12 +209,6 @@ async task，必須單機派放。
 
 自動切地圖。
 站點綁地圖，當站點在任務程序中切換時，轉換成相應的地圖。
-
-
-
-
-
-
 
 
 

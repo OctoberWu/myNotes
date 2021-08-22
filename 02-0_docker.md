@@ -16,6 +16,10 @@ $python3 docker_descendants.py <image_id>
 ### Remove all docker containers and images
 ```sh
 $docker rm -vf $(docker ps -a -q) && docker rmi -f $(docker images -a -q)
+
+# combination od the following two
+$docker rm -vf $(docker ps -a -q) 
+$docker rmi -f $(docker images -a -q) 
 ```
 
 
@@ -23,7 +27,7 @@ $docker rm -vf $(docker ps -a -q) && docker rmi -f $(docker images -a -q)
 ```sh
 # 1. list all docker stats
 $docker stats
-# 2. stop container
+# 2. list all containers 
 $docker ps -a
 ```
 
