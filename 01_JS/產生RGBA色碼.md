@@ -1,4 +1,5 @@
 ### generate the color code
+
 ```js
 function getRGBA(r, g, b, a = 0.2) {
 
