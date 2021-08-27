@@ -1,0 +1,15 @@
+@startuml
+== Initialization ==
+User -> WebUI: open role page
+WebUI -> WebUI: initRundownAsync()
+WebUI -> RMT: fetchToken()
+RMT -> WebUI: token 
+WebUI -> SwarmCore: getFleetSettings()
+SwarmCore -> WebUI: fleet_settings
+WebUI -> WebUI: loadRolesView()
+
+== Load the Selected Role ==
+User -> WebUI: select the role
+WebUI -> SwarmCore: getRoleXML
+
+@enduml
