@@ -40,10 +40,6 @@ Task scheduling
 - [x] snapd
 
 
-##### TBC (To Be Checked)
-scheduler, 要有 task management 機制
-1. confirm which task for which AMR
-
 docker, k8s robot maker 
 k3s lightweight for rpi
 ydlidar

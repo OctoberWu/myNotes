@@ -1,0 +1,18 @@
+@startuml
+== Initialization ==
+User -> WebUI: open fleet page
+WebUI -> WebUI: initRundownAsync()
+WebUI -> RMT: fetchToken()
+RMT -> WebUI: token 
+WebUI -> SwarmCore: getAvailableFleets()
+SwarmCore -> WebUI: fleets
+WebUI -> SwarmCore: asyncReadFleetConfig()
+SwarmCore -> WebUI: allFleetAgents
+WebUI -> WebUI: loadFleetSettings()
+
+== Load (Selected) Fleet Settings ==
+WebUI -> SwarmCore: getAvailableFleets() 
+WebUI -> WebUI: take 1st fleet as default 
+WebUI -> SwarmCore: getFleetSettings
+
+@enduml
