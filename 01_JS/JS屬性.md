@@ -27,3 +27,18 @@ ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_
 
 ### hover cursor types
 ![](./docs/../../doc/hover_cursors.gif)
+
+---
+### JSON Object 取值
+##### 判斷 JSON物件中是否有特定key值
+* 避免使用：
+```js
+testObj['prop'] === undefined
+```
+
+* 建議使用:
+```js
+!('prop' in testObj)
+// or
+testObj.hasOwnProperties('prop')
+```
