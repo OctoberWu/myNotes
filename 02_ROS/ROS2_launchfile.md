@@ -99,9 +99,7 @@ Note:
   <exec_depend>demo_nodes_py<exec_depend>
 ...
 ```
-
-* Install from a cpp packages
-```txt
+* Install from a cpp packages ```txt
 #CMakeList.txt
 ...
 install(DIRECTORY
@@ -111,3 +109,29 @@ install(DIRECTORY
 ...
 ```
 
+---
+### ros2 run - symbol not found on custom msg
+When invoking rosidl_generate_interfaces in CMake, the message dependencies need to be specified using the DEPENDENCIES argument.
+
+```cmake
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${my_msg_files}
+  ${my_srv_files}
+  DEPENDENCIES geometry_msgs my_custom_msgs
+)
+```
+
+### ROS 運行時，出現`unrecognized symbol`，留意idl是否有正確產生對應的message檔案 <b>DEPENDENCIES</b>
+```cmake
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/Num.msg"
+  "msg/UiRequest.msg"
+  "msg/UiResponse.msg"
+  DEPENDENCIES geometry_msgs
+)
+
+ref. link: https://answers.ros.org/question/326008/ros2-run-symbol-not-found-on-custom-msg/
+```
+
+### COLCON tutorial 
+ref link: https://colcon.readthedocs.io/en/released/user/quick-start.html
