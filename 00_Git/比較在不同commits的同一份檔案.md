@@ -9,3 +9,6 @@ git diff HEAD^^ HEAD main.c
 git diff HEAD^^..HEAD -- main.c
 git diff HEAD~2 HEAD -- main.c
 ```
+
+
+### How to diff 2 files on the same branch, the same commit
