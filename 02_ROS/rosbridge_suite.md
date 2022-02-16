@@ -7,9 +7,14 @@
 ros2 run rosbridge_server rosbridge_websocket --ros-args -p max_message_size:=50000000
 
 pm2 start ./rosbridge_websocket --interpreter=python3 -- --ros-args -p port:=9091
+
+pm2 start ./rosbridge_websocket --interpreter=python3 --max-memory-restart 1500M -- --ros-args -p max_message_size:=1000000000
 ```
 
 ref link:
 1. https://github.com/RobotWebTools/rosbridge_suite/issues/41
 2. https://github.com/RobotWebTools/rosbridge_suite/issues/699
-3. 
+
+
+chrome://inspect/#workers
+check `Shared workers` > far_ros_worker.js 
