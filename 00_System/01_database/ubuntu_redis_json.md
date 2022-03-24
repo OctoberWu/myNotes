@@ -36,6 +36,8 @@ sudo cp ./src/rejson.so /usr/lib
 sudo vim /etc/redis/redis.conf
 ### append below to redis.conf
 `loadmodule /usr/lib/rejson.so`
+#### or
+$ redis-server --loadmodule /usr/lib/rejson.so
 ```
 
 ### Function Test
