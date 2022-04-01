@@ -32,3 +32,36 @@ Redis is increasingly used as a `caching layer`, much like a more sophisticated 
 	* write-back for data you might want to accumulate then batch write (where you can afford to lose recent data).
 
 ref: https://stackoverflow.com/questions/17033031/can-redis-write-out-to-a-database-like-postgresql
+
+---
+### Redis Introduction
+
+You can log into redis server via:
+```sh
+redis-cli -h <host-address> -p <port> -a <password>
+# or
+redis-cli -u redis://username:password@host:port
+```
+
+---
+### Redis Uninstallation
+Go into the folder where you ran sudo make install and run sudo make uninstall and that would get rid of it but first you have to stop it see steps below.
+
+Steps:
+```sh
+# Stop redis with:
+
+sudo systemctl stop redis
+sudo systemctl disable redis
+Change into install location as per the tutorial link:
+
+cd redis-stable
+sudo make uninstall
+# Get rid of the folders created:
+
+sudo rm /etc/redis/redis.conf
+sudo rm -rf /var/lib/redis
+# Remove redis user:
+
+sudo deluser redis
+```

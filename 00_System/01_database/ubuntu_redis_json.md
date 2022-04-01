@@ -40,6 +40,7 @@ sudo vim /etc/redis/redis.conf
 $ redis-server --loadmodule /usr/lib/rejson.so
 ```
 
+---
 ### Function Test
 
 ```sh
@@ -47,3 +48,26 @@ redis-cli
 ### command
 json.set abc . '{"a":"1","b":"2",,"c":"3"}'
 ```
+
+---
+### How to stop redis-server
+```sh
+/etc/init.d/redis-server restart
+
+# stop/start it:
+/etc/init.d/redis-server stop
+/etc/init.d/redis-server start
+```
+
+---
+### running database server in docker container
+```sh
+docker run -it --rm -d --name my-redis -p 6379:6379 redis
+```
+| params | features                 |
+| ------ | ------------------------ |
+| -it    | interactive              |
+| -rm    | remove while termination |
+| -d     | daemon mode              |
+| -name  | container name           |
+| -p     | port                     |
