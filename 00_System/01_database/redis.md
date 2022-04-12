@@ -1,8 +1,17 @@
-### Installation
+### Prerequisites and Installation
 
+#### Redis Intallation
 ```sh
+# Method 1: 
 ## install from apt sever
-$sudo apt-get install redis
+sudo apt-get install redis
+
+# Method 2:
+wget https://download.redis.io/releases/redis-6.2.4.tar.gz
+tar xzf redis-6.2.4.tar.gz
+cd redis-6.2.4
+make
+```
 
 ## run in daemon
 $redis-server & 
@@ -65,3 +74,9 @@ sudo rm -rf /var/lib/redis
 
 sudo deluser redis
 ```
+
+---
+### 管理工具
+* [AnotherRedisDesktopManager](https://github.com/qishibo/AnotherRedisDesktopManager?fbclid=IwAR1h3ETAMa1b2fgOQ6cpUrhbqV_JW_ZAkh6EDUss9h4lhqbHT-rLLgM106Q)
+
+* [How to get SQL-like Experience with Redis?](https://redis.com/blog/get-sql-like-experience-redis/)

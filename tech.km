@@ -1,0 +1,165 @@
+{
+    "root": {
+        "data": {
+            "id": "cj6b9gn8e1k0",
+            "created": 1649568589928,
+            "text": "Swarm"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cj6bevu4i940",
+                    "created": 1649569014817,
+                    "text": "distirbuted lock"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cj6bf9i9wig0",
+                    "created": 1649569044575,
+                    "text": "Database",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cj6bfmt1how0",
+                            "created": 1649569073525,
+                            "text": "Redis"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cj6bfp8pvlc0",
+                            "created": 1649569078826,
+                            "text": "Postgresql"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cj6bfj2uf3s0",
+                            "created": 1649569065410,
+                            "text": "SQLite3"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cj6bgnf3swo0",
+                    "created": 1649569153223,
+                    "text": "Message Broker",
+                    "layout_mind_offset": {
+                        "x": -605,
+                        "y": 10
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cj6bfyxy9i00",
+                            "created": 1649569099943,
+                            "text": "Rabbit MQ"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cj6bhullbgo0",
+                            "created": 1649569247217,
+                            "text": "Bull MQ"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cj6bh1m54940",
+                    "created": 1649569184123,
+                    "text": "Comm. Protocol"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cj6bh8mjtrk0",
+                            "created": 1649569199386,
+                            "text": "WebSocket"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cj6bhb7ywz40",
+                            "created": 1649569205034,
+                            "text": "RESTful API"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cj6bhgp8icg0",
+                            "created": 1649569216962,
+                            "text": "gRPC"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cj6bi60lkyg0",
+                    "created": 1649569272069,
+                    "text": "NodeJS",
+                    "layout_mind_offset": {
+                        "x": 443,
+                        "y": 88
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cj6bidik5cg0",
+                            "created": 1649569288392,
+                            "text": "npm"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cj6bixlqoxk0",
+                                    "created": 1649569332120,
+                                    "text": "Squelized",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cj6bin55g6g0",
+                            "created": 1649569309349,
+                            "text": "Vanilla JS"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cj6bitqzwlc0",
+                            "created": 1649569323731,
+                            "text": "Typescript"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
