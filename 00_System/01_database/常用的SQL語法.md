@@ -129,4 +129,6 @@ SELECT * FROM (SELECT * FROM syslog LIMIT 365000, 2) WHERE level="ERROR"
 ---
 INSERT OR REPLACE INTO FlowState (ts, flow_id, flow_name, state, progress, fleet_name, last_updated) VALUES ('2022-03-15 14:44:37', '25d1ca32-751a-4585-8969-77722562cba5', 'rack_to_rack', 1, 1, 'AUO', '2022-03-15 14:44:37');
 
+### To supercharge SQL query - subquery
+[SQL Subqueries](https://www.mssqltips.com/sqlservertip/6036/sql-server-subquery-example/)
 --- 
