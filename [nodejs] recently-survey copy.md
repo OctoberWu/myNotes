@@ -30,6 +30,27 @@ pm2 update
 * [How to publish the package in npm?](https://medium.com/dhiwise/how-to-publish-the-package-in-npm-80b7a9b97a4c)
 * [Supercharge Your Node.js Productivity With Debugging](https://javascript.plainenglish.io/supercharge-your-node-productivity-with-debugging-781686ac830f)
 
+
+
+--- 
+### [Testing] communication traffic pressure testing tool
+* Autocannon
+* Artillery
+	* [A Guide to Load Testing Node.js APIs with Artillery](https://blog.appsignal.com/2021/11/10/a-guide-to-load-testing-nodejs-apis-with-artillery.html)
+
+---
+### [Enhancement] web framework in better performance
+* hyper-express
+  * [HyperExpress: High Performance Node.js Webserver](https://www.npmjs.com/package/hyper-express)
+
+---
+### [Enhancement] websocket, backpressure
+* Articles
+  * [Lossless Backpressure in RxJS](https://itnext.io/lossless-backpressure-in-rxjs-b6de30a1b6d4)
+	* [High Performance Node Server Powered by uWebSockets.js Under the Hood](https://morioh.com/p/6be18f1e2196)
+* discussion
+  * [ws-Detection of TCP backpressure/flow control](https://github.com/websockets/ws/issues/1218)
+
 ---
 ### Node JS with Rust
 * [Writing fast and safe native Node.js modules with Rust](https://blog.risingstack.com/node-js-native-modules-with-rust/)
