@@ -1,4 +1,4 @@
-keywords: list_grid_view_switcher 
+keywords: list_grid_view_switcher, list-view, grid-view 
 
 ---
 ### A List/Grid View Switcher with jQuery

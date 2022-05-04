@@ -1,3 +1,6 @@
+keywords: load_execution_sequence, on_load, document_ready
+
+---
 ### JavaScript window.onload 和 jQuery $(document).ready() 的差異
 
 
@@ -27,4 +30,5 @@ $(function() {
 
 
 Ref:
-[JavaScript window.onload 和 jQuery $(document).ready() 的差異](https://matthung0807.blogspot.com/2018/02/javascript-windowonload-jquery.html)
+* [JavaScript window.onload 和 jQuery $(document).ready() 的差異](https://matthung0807.blogspot.com/2018/02/javascript-windowonload-jquery.html)
+* [Load and execution sequence of a web page?](https://stackoverflow.com/questions/1795438/load-and-execution-sequence-of-a-web-page?rq=1)
