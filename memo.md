@@ -1,3 +1,62 @@
+keywords: 
+
+--- FAQ
+### Q: Select all child elements 
+```js
+/* SELECT using PARENT.childNodes */
+let allChildren = document.querySelector("#parentSelector").childNodes
+
+/* PRINT */
+for(let i=0; i < allChildren.length; i++) {
+         console.log("Child #", i + 1, allChildren[i])
+}
+```
+
+### Q: How to get all the elements by their class-name, after querySelectorAll()
+#### Sol:
+Failing that, you can look to querySelector and a substring matching attribute selector:
+
+```js
+document.querySelectorAll("[class^=page]")
+```
+… but that will only work if pageSomething is the first listed class name in the class attribute.
+
+document.querySelectorAll("[class*=page]")
+… but that will match class attributes which mention "page" and not just those with classes which start with "page" (i.e. it will match class="not-page".
+
+That said, you could use the last approach and then loop over .classList to confirm if the element should match.
+
+#### Example: 
+```js
+var x = document.querySelectorAll('[id^="entryField"]'),
+    empty = 0;
+
+for (var i = 0; i < x.length; ++i) {
+    if (x[i].value == "") {
+        ++empty;
+    }
+}
+if (empty !== 0 && empty !== x.length) {
+    alert("Please enter a value");
+}
+```
+
+--- 
+### DOM on Browser 心得
+> Tree, Linked List 無所不在
+* DOM, Document Of Model. 是術的結構存在。在Browser上，都是文件，也都是一個Node, 透過階層關係，描述 node 與 node 之間的關聯。
+* 可以在 Web API 可窺見
+  * querySelector(), querySelectorAll()
+  * getElmentById(), getElementsByTagName(), etc...
+* querySelectorAll() 返回的是一種稱為NodeList的資料結構，非單純的Array, 所以不適用Arrry.prototype方法
+* NodeList 
+  * NodeList.length
+```js
+// All the paragraphs in the document
+const items = document.getElementsByTagName("p");
+```
+
+---
 ## current technology
 how the problem to the solved
 how to improve
