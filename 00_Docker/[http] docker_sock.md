@@ -3,9 +3,16 @@
 
 通過RESTful API  作為 Endpoint與 dockerd 互動
 
-ref: 
+---
+### with `-H` argument
+You can configure the Docker daemon to listen to multiple sockets at the same time using multiple -H options:
+
+The example below runs the daemon listenin on the default unix socket, and on 2 specific IP addresses on this host:
+```sh
+sudo dockerd -H unix:///var/run/docker.sock -H tcp://192.168.59.106 -H tcp://10.10.10.2
+```
+
+# references: 
 * [docker.sock](https://docs.docker.com/engine/reference/commandline/dockerd/#examples)
 * [Docker Tips : about /var/run/docker.sock](https://betterprogramming.pub/about-var-run-docker-sock-3bfd276e12fd)
 
-
-### [Angular] Define
