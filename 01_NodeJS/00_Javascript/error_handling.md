@@ -1,7 +1,11 @@
 keywords: exception, handling, error-handling, exceptional handling
 
 ---
-## Error/Exceptional handling
+## Error/Exception handling
+
+### Some coding error
+* Typo (拼寫錯誤)
+* SyntaxError (語法錯誤)
 ### 7 Types of Error
 1. Error
 2. RangeError
@@ -9,7 +13,7 @@ keywords: exception, handling, error-handling, exceptional handling
 4. SyntaxError
 5. TypeError
 6. URIError
-7. EvalError
+7. EvalError (已遺棄)
 
 
 ---
