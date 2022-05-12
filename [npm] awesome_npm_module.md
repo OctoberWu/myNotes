@@ -11,8 +11,11 @@ keywords: npm, modules, pubsub, timeduration, scheduler
 * [timesync](https://www.npmjs.com/package/timesync)
 > 用於處理時間同步的議題，對於高規格的要求，可考慮twilio
 
-* [express-gateway](https://www.npmjs.com/package/express-gateway)
+* [express-gateway](https://www.npmjs.com/package/express-gateway) ***
 > 用於處理express gateway的需求
+
+* [http-proxy](https://www.npmjs.com/package/http-proxy)
+> 用於處理api gateway工具。更多資訊可參考 [Building an API Gateway using Node.js](https://blog.risingstack.com/building-an-api-gateway-using-nodejs/)
 
 * [node-schedule](https://www.npmjs.com/package/node-schedule)
 > nodejs的排程器函式庫 
