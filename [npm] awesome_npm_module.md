@@ -26,3 +26,13 @@ keywords: npm, modules, pubsub, timeduration, scheduler
 * [js-graph-algorithms](https://www.npmjs.com/package/js-graph-algorithms)
 > nodejs的graph函式庫 
 
+* [ngraph.path](https://github.com/anvaka/ngraph.path)
+> Path finding in a graph in javascript
+
+* [yup](https://www.npmjs.com/package/yup)
+> javacript schema 的驗證器
+tutorial: 
+  - [[note] Yup 筆記](https://pjchender.dev/npm/npm-yup/#)
+	- [Validation with Yup](https://www.techzaion.com/validation-with-yup)
+	- [Some Useful Tips And Tricks About Form Validation](https://dev.to/cloudpower97/some-useful-tips-and-tricks-about-form-validation-5a5l)
+
