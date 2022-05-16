@@ -13,4 +13,5 @@ Sol:
 
 references:
 * [Finding And Fixing Node.js Memory Leaks: A Practical Guide](https://marmelab.com/blog/2018/04/03/how-to-track-and-fix-memory-leak-with-nodejs.html)
+* [Hunting a Ghost – Finding a Memory Leak in Node.js](https://blog.risingstack.com/finding-a-memory-leak-in-node-js/)
 * [关于Node进程管理器PM2使用技巧和需要注意的地方](https://github.com/jawil/blog/issues/7)
