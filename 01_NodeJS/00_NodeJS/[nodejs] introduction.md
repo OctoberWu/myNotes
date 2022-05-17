@@ -16,4 +16,8 @@ keywords: nodejs, event-loop, micro-task, macro-task
  * [Event Loop in NodeJS— Visualized](https://medium.com/@mmoshikoo/event-loop-in-nodejs-visualized-235867255e81)
  
  #### add-on
+ * [mapbox/node-cpp-skel](https://github.com/mapbox/node-cpp-skel)
+		> About Skeleton for bindings to C++ libraries for Node.js using node-addon-api
  * [Node.js Addon Quickstart](https://nodeaddons.com/)
+ * [Writing Native Node.js Modules](https://blog.risingstack.com/writing-native-node-js-modules/)
+ * [A simple guide to load C/C++ code into Node.js JavaScript Applications](https://medium.com/jspoint/a-simple-guide-to-load-c-c-code-into-node-js-javascript-applications-3fcccf54fd32)
