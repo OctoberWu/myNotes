@@ -2,6 +2,12 @@ keywords: rate-limit, throttling, burst
 
 --- 
 ### Quick Note:
+#### key factors  
+* Logs
+* Auth
+* Trace
+* Rate Limit
+#### related terms
 * rate limit (速度限制): 單位時間內的速度，單位通常是秒，常見的有述語有以下：
 	* rps: request per second, 通常是網頁請求
 	* qps: query per second, 通常是 database 的 query
@@ -13,6 +19,7 @@ keywords: rate-limit, throttling, burst
 * burst limit: burst 中文翻成爆裂、爆走，突然的流量爆衝，但是暴衝還是要有限制，不然下一步就是爆炸 XDD
 * steady-state rate: 穩態速率
 * Levels in Amazon API Gateway: 分成 Account-Level Throttling 和 Stage-Level
+
 
 
 ### references:
