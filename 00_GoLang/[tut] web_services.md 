@@ -1,0 +1,9 @@
+keywords: web-service, go-lang, api
+
+---
+### references:
+* [使用Golang打造Web應用程式](htts://yuanchieh.page/posts/2020/2020-01-14_redis-lock-redlock-%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E5%AF%A6%E4%BD%9C/)
+* [Go service as a web server](https://medium.com/swlh/create-go-service-the-easy-way-iii-c84489cc1ee0)
+* [Golang 轉生到web世界 - Gin HTML渲染](https://ithelp.ithome.com.tw/articles/10269897)
+* [Golang Microservices — New generation programming language](https://impelsys.medium.com/golang-microservices-new-generation-programming-language-1e07cf84e62f)
+  > Note project structure
