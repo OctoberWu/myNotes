@@ -1,4 +1,4 @@
-keywords: redis, cache, pub-sub, websocket, scalability
+keywords: redis, cache, pub-sub, websocket, scalability, comparison
 
 --- 
 ### quick note:
@@ -22,3 +22,6 @@ keywords: redis, cache, pub-sub, websocket, scalability
 #### Distributed lock 
 * [Everything I know about distributed locks](https://davidecerbo.medium.com/everything-i-know-about-distributed-locks-2bf54de2df71)
 * [Redis Lock (Redlock) 分散式 lock 原理分析與實作](https://yuanchieh.page/posts/2020/2020-01-14_redis-lock-redlock-%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E5%AF%A6%E4%BD%9C/)
+
+#### architecture 
+* [Memcached vs Redis 適用的狀況思考](https://carbonkuo.github.io/2019/04/MemcachedvsRedis/)
