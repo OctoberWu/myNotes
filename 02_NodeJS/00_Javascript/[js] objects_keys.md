@@ -15,3 +15,121 @@ keywords: Object.keys(), Object.values, Object.entries(), shallow-copy, deep-cop
 ### references:
 * [JavaScript 之旅 (4)：Object.keys() & Object.values() & Object.entries()](https://ithelp.ithome.com.tw/articles/10239942)
 * [JS 中的淺拷貝 (Shallow copy) 與深拷貝 (Deep copy) 原理與實作](https://www.programfarmer.com/articles/javaScript/javascript-shallow-copy-deep-copy)
+
+---
+### Convert JSON Object into a flat JSON array
+
+* raw data 
+```js
+{
+ "country": "Country A",
+ "_id": "1"
+ "regions": [
+	 {
+			"region": "region A1",
+			"cities": [
+				{
+					"city": "city A11"
+				},
+				{
+					"city": "city A12"
+				}
+			]
+		},
+		{
+			"region": "region A2",
+			"cities": [
+				{
+					"city": "city A21"
+				},
+				{
+					"city": "city A22"
+				}
+			]
+		}
+	]
+}
+```
+
+* processed data
+```js
+[
+	{
+		"country": "Country A",
+		"region":"Region A1",
+		"city": "City A11"
+	},
+	{
+		"country": "Country A",
+		"region":"Region A1",
+		"city": "City A12"
+	}
+]
+```
+
+#### solution:
+```js
+const country = {
+  "country": "Country A",
+  "_id": "1",
+  "regions": [
+    {
+      "region": "region A1",
+      "cities": [
+        {
+          "city": "city A11"
+        },
+        {
+          "city": "city A12"
+        }
+      ]
+    },
+    {
+      "region": "region A2",
+      "cities": [
+        {
+          "city": "city A21"
+        },
+        {
+          "city": "city A22"
+        }
+      ]
+    }
+  ]
+};
+
+const flat = country.regions.flatMap(({region, cities}) =>
+  cities.map(({city}) => ({country: country.country, region, city})
+));
+
+console.log(flat);
+```
+
+* output
+```js
+[
+  {
+    "country": "Country A",
+    "region": "region A1",
+    "city": "city A11"
+  },
+  {
+    "country": "Country A",
+    "region": "region A1",
+    "city": "city A12"
+  },
+  {
+    "country": "Country A",
+    "region": "region A2",
+    "city": "city A21"
+  },
+  {
+    "country": "Country A",
+    "region": "region A2",
+    "city": "city A22"
+  }
+]
+```
+
+#### references:
+* [Convert JSON object into a flat JSON Array](https://stackoverflow.com/questions/53713291/convert-json-object-into-a-flat-json-array)
