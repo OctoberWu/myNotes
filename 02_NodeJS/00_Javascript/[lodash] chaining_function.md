@@ -46,5 +46,10 @@
 	console.log(arr);
 	```
 
-References:
-[Chaining functions in javaScript with lodash or not](https://dustinpfister.github.io/2018/11/11/lodash_chain/)
+### quick note:
+* filter out keys in JSON object, could use lodash `_.pickBy()` method.
+
+---
+### References:
+* [Chaining functions in javaScript with lodash or not](https://dustinpfister.github.io/2018/11/11/lodash_chain/)
+* [How to Filter Keys of an Object with Lodash?](https://thewebdev.info/2021/04/11/how-to-filter-keys-of-an-object-with-lodash/)
