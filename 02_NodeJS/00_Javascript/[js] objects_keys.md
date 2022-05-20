@@ -1,4 +1,4 @@
-keywords: Object.keys(), Object.values, Object.entries()
+keywords: Object.keys(), Object.values, Object.entries(), shallow-copy, deep-copy
 
 
 --- 
@@ -14,3 +14,4 @@ keywords: Object.keys(), Object.values, Object.entries()
 
 ### references:
 * [JavaScript 之旅 (4)：Object.keys() & Object.values() & Object.entries()](https://ithelp.ithome.com.tw/articles/10239942)
+* [JS 中的淺拷貝 (Shallow copy) 與深拷貝 (Deep copy) 原理與實作](https://www.programfarmer.com/articles/javaScript/javascript-shallow-copy-deep-copy)
