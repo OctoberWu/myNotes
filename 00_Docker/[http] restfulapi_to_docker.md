@@ -19,6 +19,13 @@ curl --unix-socket /var/run/docker.sock http://localhost/images/json | jq .
 curl --unix-socket /var/run/docker.sock http://localhost/containers/json
 ```
 
+* `POST` to start/stop a container
+```sh
+curl -X POST --unix-socket /var/run/docker.sock http://localhost/containers/{id}/{start｜stop}
+# or
+curl -X POST --unix-socket /var/run/docker.sock http://localhost/containers/90c5ff77bc9f/stop
+```
+
 ### FAQ
 > 順便搞清楚一個常見問題:
 1. 有個常見的問題相信大家都遇見過，執行docker命令時控制檯報錯如下：

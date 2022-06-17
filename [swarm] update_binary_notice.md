@@ -1,6 +1,7 @@
 ### Steps to update swarm binaries install
 1. Download the lastest binary files
 2. Back-up / Remove the original install folders
+		- "farobot_dev_env/docker-services/repository_service/far_deb/"
 3. Run the install binary script
 ```sh
 cd ~/farobot_dev_env/scripts
