@@ -1,3 +1,12 @@
+keywords: linux-socket, format
+
+---
+### docker --format
+```sh
+# get the container ip-address
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' swarm_core_service 
+```
+
 ### What's docker.sock
 `docker.sock` is the UNIX socket that Docker daemon is listening to. It's the main entry point for Docker API. It also can be TCP socket but by default for security reasons Docker defaults to use UNIX socket.
 
