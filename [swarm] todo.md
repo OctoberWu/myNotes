@@ -9,6 +9,8 @@ keywords: improvements, todo, missing-features,
 
 - [ ] 長時間處理請求。
 > 使用RESTful API進行長時間的請求，更新狀態。 使用SSE
+- [ ] control-list for debian packages
+- [ ] robot physical configuration 
 
 ### known issues:
 * when need to do updates, the network has to be set to `host` instead of `bridge`.
@@ -16,3 +18,13 @@ keywords: improvements, todo, missing-features,
 		- services > base_service > network_mode > host
 
 
+Relation tables is hard to describe further hierarchy structure
+each column is hard to accommodate more further hierarchy. 
+and the elements has many, then it becomes more complex operate the data
+graph may be more suitable for solving such cases.
+
+
+* replace the communication pub/sub mechanism in docker containers
+	1. switch the mode from `bridge` to `host`
+	2. the sample codes are tested in `ros_mocks_ws > py_pubsub`
+	

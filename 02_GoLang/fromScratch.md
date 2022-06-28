@@ -33,7 +33,7 @@ func main() {
 ### 解決出現以下錯誤訊息
 
 Case: 初次在 VS Code 建立GO 專案
-> go module init
+> go module initialization
 
 ```sh
 go.mod file not found in current directory or any parent directory； see ‘go help modules‘

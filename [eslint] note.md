@@ -9,6 +9,10 @@ keywords: eslinter
 	- .eslintrc.js
 	- .eslintrc.json
 
+#### ISSUE: ESLint出现Environment key "es2021" is unknown
+* `parserOptions: eslinter` 版本必須在7.0以上，才支援
+* [](https://www.jianshu.com/p/9e96a00ff438)
+
 ### references:
 * [Configuring ESLint](https://eslint.org/docs/6.0.0/user-guide/configuring)
 * [[JS] 使用 ESLint 提高程式碼品質](https://larrylu.blog/improve-code-quality-using-eslint-742cf1f384f1)
