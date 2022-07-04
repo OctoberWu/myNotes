@@ -27,4 +27,5 @@ graph may be more suitable for solving such cases.
 * replace the communication pub/sub mechanism in docker containers
 	1. switch the mode from `bridge` to `host`
 	2. the sample codes are tested in `ros_mocks_ws > py_pubsub`
+	3. add docker-compose ports: 5672, 15672
 	
