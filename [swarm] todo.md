@@ -29,3 +29,6 @@ graph may be more suitable for solving such cases.
 	2. the sample codes are tested in `ros_mocks_ws > py_pubsub`
 	3. add docker-compose ports: 5672, 15672
 	
+
+* Variables Configuration
+ - [nodejs]  node-config
