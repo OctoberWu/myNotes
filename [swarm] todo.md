@@ -32,3 +32,7 @@ graph may be more suitable for solving such cases.
 
 * Variables Configuration
  - [nodejs]  node-config
+
+* 使用SQL與NoSQL資料庫的差別。對於資料的結構化程度不同
+  - SQL對於資料的結構化程度較高。目前SQL已有些產品可支援JSON Object，但對於更剛彈性的資料結構，就顯得不足。
+	- No SQL能夠容許更高的資料結構的變化。JSON的結構，能夠更加的彈性及擴充。
