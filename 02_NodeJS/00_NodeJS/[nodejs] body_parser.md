@@ -1,7 +1,12 @@
-keywords: body-parser, swagger-restful-api
+keywords: '`req.body` undefined', body-parser, swagger-restful-api
 
 ---
 ### quick note:
+#### debugging messge
+```shell
+req.body is undefined
+```
+
 * Using swagger api, WITH CAN NOT get the POST/PUT body. It's because the body-parser module of express middle aren't imported properly
 
 ```js

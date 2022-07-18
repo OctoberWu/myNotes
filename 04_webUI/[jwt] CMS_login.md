@@ -4,7 +4,7 @@ keywords: jwt, login-system, validtor, authentication, authorization, role-based
 ### quick note: 
 * npm have a format validator, ajv. - JSON schema validator. handy
 
-### axios Examples:
+### [POST] axios Examples:
 ```js
   // --- request payload ---
   let payload = { camUUID: req.body.camUUID, enable: req.body.enable };
