@@ -4,10 +4,33 @@ keywords: jwt, login-system, validtor, authentication, authorization, role-based
 ### quick note: 
 * npm have a format validator, ajv. - JSON schema validator. handy
 
+### axios Examples:
+```js
+  // --- request payload ---
+  let payload = { camUUID: req.body.camUUID, enable: req.body.enable };
+  // ------ axios method 1 ------
+
+  let camRes = await axios.post(`http://${camIP}:${camPORT}/nxPlugin/activePlugin`, payload);
+ // ------ axios method 2 ------
+  let myRes = await axios({
+    method: 'POST',
+    url: `http://${camIP}:${camPORT}/nxPlugin/activePlugin`,
+    data: payload
+  }).then((response) => {
+    return response;
+  }).catch((err) => {
+    console.error(err);
+  })
+
+  console.log(myRes.status);     // 200
+  console.log(myRes.statusTest); // 'OK'
+  console.log(myRes.data);       // response body in JSON format
+	console.log(myRes.ok)          // [x] Note: different from `fetch` method, axios response does not contain ok property
+```
+
 
 ### references:
 * [Application config with YAML and JSON Schema validation](https://medium.com/trabe/application-config-with-yaml-and-json-schema-validation-94a870855314)
-* [Getting Started With Axios](https://medium.com/codingthesmartway-com-blog/getting-started-with-axios-166cb0035237)
 * [Day 19 - 二周目 - 帳密認証與JWT (JSON Web Token)傳遞](https://ithelp.ithome.com.tw/articles/10203292)
 * [[筆記] 透過 JWT 實作驗證機制](https://medium.com/%E9%BA%A5%E5%85%8B%E7%9A%84%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%AE%B6%E7%AD%86%E8%A8%98/%E7%AD%86%E8%A8%98-%E9%80%8F%E9%81%8E-jwt-%E5%AF%A6%E4%BD%9C%E9%A9%97%E8%AD%89%E6%A9%9F%E5%88%B6-2e64d72594f8)
 * [Handling Authentication and Authorization with Node](https://medium.com/quick-code/handling-authentication-and-authorization-with-node-7f9548fedde8)
