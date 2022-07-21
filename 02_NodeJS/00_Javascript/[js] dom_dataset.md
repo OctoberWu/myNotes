@@ -47,3 +47,10 @@ $( "body" ).data( { baz: [ 1, 2, 3 ] } );
 $( "body" ).data( "foo" ); // 52
 $( "body" ).data(); // { foo: 52, bar: { isManual: true }, baz: [ 1, 2, 3 ] }
 ```
+
+### base practices:
+* get max/min value from a DOM
+```javascript
+  let valMin = $(this).attr('min');
+  let valMax = $(this).attr('max');
+```
