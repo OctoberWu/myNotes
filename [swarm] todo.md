@@ -11,6 +11,7 @@ keywords: improvements, todo, missing-features,
 > 使用RESTful API進行長時間的請求，更新狀態。 使用SSE
 - [ ] control-list for debian packages
 - [ ] robot physical configuration 
+- [v] 長時間大資料量的對策。刪除資料筆數的操作，只保持最近幾筆的資料，超過的筆數，一律刪除。當資料太大，請求超時重覆發出刪除指令時，並不會移除最新的10000筆資料。
 
 ### known issues:
 * when need to do updates, the network has to be set to `host` instead of `bridge`.
