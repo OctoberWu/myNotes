@@ -6,8 +6,7 @@ keywords: capitalized words
 $(document).find('.card-title > span').each(function () {
 	// --- font-text, font-family spec. ---
 	let title = $(this).text().trim().toLowerCase();
-	// $(this).text(title[0].toUpperCase() + title.slice(1));
-	title = title.replace(/\b\w/g, l => l.toUpperCase())
+	title = title[0].toUpperCase() + title.slice(1);
 	$(this).text(title)
 	$(this).css("font-family", "Arial");
 });
@@ -18,7 +17,6 @@ $(document).find('.card-title > span').each(function () {
 $(document).find('.card-title > span').each(function () {
 	// --- font-text, font-family spec. ---
 	let title = $(this).text().trim().toLowerCase();
-	// $(this).text(title[0].toUpperCase() + title.slice(1));
 	title = title.replace(/\b\w/g, l => l.toUpperCase())
 	$(this).text(title)
 	$(this).css("font-family", "Arial");
