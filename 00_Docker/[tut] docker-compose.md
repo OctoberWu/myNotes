@@ -1,4 +1,4 @@
-keywords: docker-compose, tutorial,
+keywords: docker-compose, tutorial, psuedo-tty, tty-allocation
 
 ---
 ### docker run command
@@ -48,4 +48,26 @@ services:
 			- ME_CONFIG_MONGODB_ADMINUSERNAME=admin
 			- ME_CONFIG_MONGODB_ADMINPASSWORD=password
 			- ME_CONFIG_MONGODB_SERVER=mongodb
+```
+
+---
+### tty-alloction:
+* 使用docker時，`-t` 用配置虛擬終端界面(psuedo tty) 
+* 當使用 `docker-compose.yaml` 時
+```yaml
+version: '3'
+services:
+  myservice:
+	  image: debian
+		stdin_open: true  # docker run -i
+		tty: true         # docker run -t
+```
+
+---
+### Keep Your Docker Container Running for Debugging
+* The easiest way to keep the container running is to change its entry point to a command that will continue running forever.
+`tail -f /dev/null` 
+```shell
+docker run -d --name myc keeprun <ENTRY_POINT>
+docker run -d --name myc keeprun tail -f /dev/null
 ```
