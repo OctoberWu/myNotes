@@ -50,3 +50,19 @@ child.supervise();
 * static in member function in js
   * only invoked by class
 * async decorator is allowed for member function in class
+
+### How to use `setTimeout` synchronously in javascript
+```javascript
+const sleep = (ms) => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};
+
+const demo = async () => {
+  console.log("this should be the first one");
+  await sleep(5000);
+  console.log("this should be the second one");
+};
+
+demo();
+```
+* more detail: https://javascript.info/settimeout-setinterval
