@@ -49,5 +49,5 @@ error: failed to push some refs to 'https://github.com/OctoberWu/john_gui.git'
 Solution: 
 ```shell
 $ git filter-branch --tree-filter 'rm -rf server/ros_bridge' HEAD
-$ git push
+$ git push <remote_repo> <local_repo>
 ```
