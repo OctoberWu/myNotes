@@ -31,3 +31,6 @@ features:
 * 可動態調整任務的經過的路線。
 * 動態意指，可在執行過程中，動態更新(新增、刪除)資源。
 * agent性能 與 任務內容 的匹配。
+
+### optimization:
+* [map graph] 更新graph上面的 robot 及使用中的edge，通過 node 以圖片的形式出現，定時更新，位置。

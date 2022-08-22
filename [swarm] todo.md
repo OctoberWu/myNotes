@@ -37,3 +37,42 @@ graph may be more suitable for solving such cases.
 * 使用SQL與NoSQL資料庫的差別。對於資料的結構化程度不同
   - SQL對於資料的結構化程度較高。目前SQL已有些產品可支援JSON Object，但對於更剛彈性的資料結構，就顯得不足。
 	- No SQL能夠容許更高的資料結構的變化。JSON的結構，能夠更加的彈性及擴充。
+
+### 使用RESTful API，需注意的細節。
+一般使用fetch，拿到返回的資料時。需留意其資料格式為JSON or non-JSON。
+
+example:
+```js
+function fetchPutMapGraph(_token, _mapName, _mapGraph) {
+	return fetch(`http://${window.location.hostname}:5000/v2/maps/${_mapName}/graph`, {
+		method: "PUT",
+		headers: {
+			accept: "application/json",
+			authorization: `${_token.token_type} ${_token.access_token}`,
+			'Content-Type': 'application/json',
+		},
+		body: `{ "content": "${_mapGraph}" }`
+										// ^^^          ^^^  <--- 記得留意是否有正確加上quotation!!
+	})
+		.then((response) => { return response; });
+}
+```
+
+
+#### 處理 Request 的資料
+* 需留意發送請求時，的字符串是否符合JSON的規範。一般換行符為'\n'，而JSON的換行符為'\\n'，
+
+#### 處理 Response的資料
+* JSON
+```js
+let res = await fetchData();
+res = await res.json();
+console.log(res);
+```
+* non-JSON
+```js
+let res = await fetchData();
+res = await res.json();
+res = await res.text();
+console.log(res);
+```
