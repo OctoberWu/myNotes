@@ -51,7 +51,7 @@ Task scheduling
 ##### Minor
 - [ ] plantuml template
 - [ ] zsh
-- [x] vscode git, Kraken
+- [x] vscode git, Kraken, lazygit
 - [x] xhost +/-local:root (Docker GUI)
 - [x] Default gazebo model path
 - [x] apt-search, add-apt-repository
