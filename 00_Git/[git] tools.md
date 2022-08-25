@@ -1,3 +1,6 @@
+keywords: git-tools
+
+---
 ### LazyGit
 
 ### Reference:

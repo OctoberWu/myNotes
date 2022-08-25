@@ -12,6 +12,7 @@ keywords: improvements, todo, missing-features,
 - [ ] control-list for debian packages
 - [ ] robot physical configuration 
 - [v] 長時間大資料量的對策。刪除資料筆數的操作，只保持最近幾筆的資料，超過的筆數，一律刪除。當資料太大，請求超時重覆發出刪除指令時，並不會移除最新的10000筆資料。
+- [v] visNetwork, Multiple event bindings. Have to `off` before binding.
 
 ### known issues:
 * when need to do updates, the network has to be set to `host` instead of `bridge`.
@@ -76,3 +77,20 @@ res = await res.json();
 res = await res.text();
 console.log(res);
 ```
+
+#### Auto-format in VSCode 
+* On Windows `Shift + Alt + F`
+* On Mac `Shift + Option + F`
+* On Linux `Ctrl + Shift + I`
+
+### swarm traffic analysis and concepts:
+0. Infrastructure
+    * configuration, graph structure(node size, edge width) setup
+1. Capacity Evaluation
+    * graph structure analysis vs. agent amount capacity
+2. Realtime Traffic Monitoring
+    * failed / disconnected handling(fail-over)
+3. Reactive Routing
+    * asynchronous routing, dynamic, responsive
+4. On-Demand Coordination Strategies
+    * optimization factors. efficiency, less-space, priority-based(on-demand)
