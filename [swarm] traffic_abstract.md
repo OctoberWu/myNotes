@@ -34,3 +34,27 @@ features:
 
 ### optimization:
 * [map graph] 更新graph上面的 robot 及使用中的edge，通過 node 以圖片的形式出現，定時更新，位置。
+
+### keywors:
+* congestion-free 
+
+
+### Reactive, Actor Framework (CAF[c++ actor framework])
+### swarm traffic analysis and concepts:
+0. Infrastructure
+    * configuration, graph structure(node size, edge width) setup
+1. Capacity Evaluation
+    * graph structure analysis vs. agent amount capacity
+2. Realtime Traffic Monitoring
+    * failed / disconnected handling(fail-over)
+3. Reactive Routing
+    * asynchronous routing, dynamic, responsive
+4. On-Demand Coordination Strategies
+    * optimization factors. efficiency, less-space, priority-based(on-demand)
+
+#### conceptually idea to implement reactive routing
+1. 建立 Graph
+2. 運用time frame，顯示不同時間戳記下的空間分佈。
+3. 用不同顏色，顯示不同 robot agent 的 ownership 
+4. Reporting
+5. coordinations

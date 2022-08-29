@@ -83,14 +83,3 @@ console.log(res);
 * On Mac `Shift + Option + F`
 * On Linux `Ctrl + Shift + I`
 
-### swarm traffic analysis and concepts:
-0. Infrastructure
-    * configuration, graph structure(node size, edge width) setup
-1. Capacity Evaluation
-    * graph structure analysis vs. agent amount capacity
-2. Realtime Traffic Monitoring
-    * failed / disconnected handling(fail-over)
-3. Reactive Routing
-    * asynchronous routing, dynamic, responsive
-4. On-Demand Coordination Strategies
-    * optimization factors. efficiency, less-space, priority-based(on-demand)
