@@ -1,4 +1,4 @@
-keywords: fox glove,
+keywords: foxglove,
 
 ---
 

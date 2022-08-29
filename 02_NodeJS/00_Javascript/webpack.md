@@ -51,3 +51,30 @@ module.exports = {
     ],
 }
 ```
+
+### webpack-dev-server 3.0 / 4.0 difference
+* webpack.config.js 
+  * contentBase -> static
+```js
+// webpack 3.0
+module.exports = {
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+  //^^^^^^^^^^^
+    compress: true,
+    port: 1257
+  },
+};
+
+
+// webpack 4.0
+module.exports = {
+  devServer: {
+    static: path.join(__dirname, 'dist'),
+  //^^^^^^
+    compress: true,
+    port: 1257
+  },
+};
+
+```
