@@ -92,3 +92,25 @@ Solution:
 $ git filter-branch --tree-filter 'rm -rf server/ros_bridge' HEAD
 $ git push <remote_repo> <local_repo>
 ```
+
+
+### 讓 git clone 只複製特定的分支資料
+### Clone specific branch
+* Option 1:
+```sh 
+$git clone --branch <branchname> <remote-repo-url>
+# or
+$git clone -b <branchname> <remote-repo-url>
+```
+
+* Option 2:
+```sh 
+$git clone --branch <branchname> --single-branch <remote-repo-url>
+# or
+$git clone -b <branchname> --single-branch <remote-repo-url>
+```
+
+* Example
+```sh
+$git clone --single-branch --branch dev https://shihchiang@bitbucket.org/farobot/far_amr_ws.git
+```

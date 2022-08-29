@@ -1,4 +1,3 @@
-
 系統畫面
 
 德國林德叉車
@@ -14,19 +13,6 @@ group 下來的任務，決定要不要grouping
 情境，與台車使用的情境。
 
 
-
-
-neuron SDK 相關工具 
-ex. 
-1. Cyclone dds 無線
-2. Deployment 工具 ROS2 跟控制相關的工具 
-
-
-
-
-
-
-
 **traffic_editor** and **building_map_toolspackages** in https://github.com/osrf/traffic_editor
 
 Traffic Schedule Database
@@ -37,17 +23,9 @@ Traffic Schedule Database
 Responsive UI (laptop, pad, phone)
 
 
-
-
 ### Questions:
 * Who are our target customers
 * Priority depends on customer perspective or product perspective
-
-
-
-task_manager的api
-原生 or extended
-
 
 
 ### Farobot Future Plan
@@ -56,10 +34,8 @@ task_manager的api
 3. 安傑倫雲服務。得到5~10間公司需求，再做收斂。
 
 
-
 * push_back how to deal with memory from interface
 copy or reference?
-
 
 
 if CMake doesn't find the path
@@ -83,7 +59,7 @@ find_package(SDL2 REQUIRED)
 ### 20200910 MiR250 Training 
 MiR 100, 200 +-10cm 24V
 
-MiR 250
+* MiR 250
 Speed: 2m/s
 Precision: 5cm
 SICK: nanotype, 48V
@@ -133,9 +109,6 @@ cartograph : 掃很大的地圖
 板金定位 提供圖面 由客戶加工
 V, L, VL +- 1cm  1度 
 
-
-車隊。全部都跑同一張地圖。
-針對車子作誤差的修正
 
 板金的位置，要放在機器人的前面。是用機器人的前面作的。停在物件的前方多遠？按經驗，**半個車身**才能測到VL
 機械手臂，Conveyor的高精度要求場域
@@ -212,73 +185,6 @@ async task，必須單機派放。
 
 
 
-### zsh with vim-mode
-```sh
-$bindkey -v
-```
-
-### [byobu] How do I change the default shell used in Byobu (tmux)?
-
-Put the following in your $HOME/.byobu/.tmux.conf:
-
-set -g default-shell /usr/bin/zsh
-set -g default-command /usr/bin/zsh
-
-### Zsh Installation
-- ZSH Installation:
-```sh
-sudo apt install zsh
-sudo apt-get install powerline fonts-powerline
-```
-- Oh-My-Zsh Installation:
-```sh
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
-```
-- Set Zsh as the default Shell:
-```sh
-chsh -s /bin/zsh
-```
-Install additional plugins (syntax highlight, auto complete):
-```sh
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-```
-Enable the plugins:
-Open the file ~/.zshrc, locate the line that says: plugins=(git). And replace it as: plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-
-- If you want to change back to Bash:
-```sh
-chsh -s /bin/bash
-```
-
-
-###
-```sh
-git clone --single-branch --branch dev https://shihchiang@bitbucket.org/farobot/far_amr_ws.git
-```
-
-### stand up meeting
-#### demo workflow
-1. the robot names confirmation > FABO 
-2. the routes and the script already confirmed
-3. do charging. Assign the task by task editor. charge is on-demand? just showcase?
-
-#### 
-1. navigation crash
-2. BT navigator crash, but not find which part, gdb
-3. When can will the multiple
-on-site hard to do the valid version. 
-Need a stable and final to deploy.
-PE cover removed, lidar problem is solved.
-
-Check the code on far_amr_ws
-
-Issue code
-Branching model
-
-
-
 
 # quick test for 500 hundred messages testing 
 ### Test List
@@ -304,9 +210,6 @@ Branching model
 
 #### Invalid BT format
 
-
-## To S-sub:
-1. the number limitation of task list?
 
 
 Swarm Robotics 的優勢
@@ -367,69 +270,7 @@ robot mode
 1. ROBOT_MODE_IDLE + Has-a task_id + got task_id > Wait for dispatching
 
 
-### GUID/UUID
-GUID: Globally-Unique IDentifiers 
-UUID: Universally Unique IDentifiers
 
-UUID 包含 32 個十六進位數字，並用「-」分隔成五組，每組分別有8、4、4、4、12的數字。例如：「550e8400-e29b-41d4-a716-446655440000」是一組完整的 UUID。
-
-#### Method1
-```javascript
-function _uuid() {
-  function s4() {
-    return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
-  }
-  return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
-}
-
-var uuid = _uuid(); //b3165466-df5b-c3d7-0e94-79d94e8c692f
-```
-cons:
-* 格式不符合 RFC4122 規範
-* Math.random() 產出的數字可能重覆 (collision)，儲存前必須做比對
-
----
-
-#### Method2
-```javascript
-function _uuid() {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {var r = Math.random()*16|0,v=c=='x'?r:r&0x3|0x8;return v.toString(16);});
-}
-
-var uuid = _uuid(); //5fc84f46-5743-4ed3-a94d-1ba63b8022a5f
-```
-pros:
-* 先擺好格式，再利用 Math.random() 產出任意數字填入格式中。這個方法解決了方法 1 的格式問題，
-cons:
-* 仍可能有 collision。
-
----
-
-#### Method3
-```javascript
-function _uuid() {
-  var d = Date.now();
-  if (typeof performance !== 'undefined' && typeof performance.now === 'function'){
-    d += performance.now(); //use high-precision timer if available
-  }
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-    var r = (d + Math.random() * 16) % 16 | 0;
-    d = Math.floor(d / 16);
-      return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-  });
-}
-```
-* 結合 time stamp 與方法 2，同時解決了格式和 collision 問題。
-* 加上 Performance.now() (亞毫秒級的時間戳記)，很難產生 collision。
-* 主流瀏覽器皆支援，但 IE 只支援 10 以上或 Edge。
-
-
-
-
-
-
-
-[如何用 JavaScript 產生 UUID / GUID？](https://cythilya.github.io/2017/03/12/uuid/)
 
 
 

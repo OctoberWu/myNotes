@@ -13,7 +13,6 @@ $lsb_release -a
 ```
 
 ---
-
 ### Set hotkey to change languages
 On Unbuntu 18.04LTS with GNOME desktop from **gnome-tweaks**
 1. Installation
@@ -28,7 +27,6 @@ $gnome-tweaks
 ```
 
 ---
-
 ### Check ttyUSB device
 ```sh
 $ls /dev | grep ttyUSB
@@ -40,7 +38,6 @@ $sudo chmod -R 777 <folder_name>
 ```
 
 ---
-
 ### apt-search & add-apt-repository
 * apt-cache: 命令可顯示 APT 內部資料庫裡的多種資訊。這些資訊是從 sources.list 檔案內聚集不同來源的快取。於執行 apt update 運作時產生的。
 ```sh
@@ -73,7 +70,6 @@ $sudo add-apt-repository --remove ppa:nginx/stable
 ```
 
 ---
-
 ### What's snapd
 > ***Background service that manages and maintains installed snaps***
 Note: you do not need to install snapd manually if you already have snap installed.
@@ -94,30 +90,46 @@ linux-generic-hwe-18.04（不带Edge）提供5.3内核后，就可以替换元�
 明年某个时间linux-generic-hwe-18.04-Edge将拉出下一个内核，而linux-generic-hwe-18.04将拉出5.3。如果您不想切换到新的主要内核版本，则始终可以删除linux-generic-hwe-18.04-Edge并稍后安装linux-generic-hwe-18.04。
 
 
-### Zsh 
-* ZSH Installation:
+### zsh with vim-mode
+```sh
+$bindkey -v
+```
+
+
+### Zsh Installation
+- ZSH Installation:
 ```sh
 sudo apt install zsh
 sudo apt-get install powerline fonts-powerline
 ```
-
-* Oh-My-Zsh Installation:
+- Oh-My-Zsh Installation:
 ```sh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 ```
-
-* Set Zsh as the default Shell:
+- Set Zsh as the default Shell:
 ```sh
 chsh -s /bin/zsh
+```
 Install additional plugins (syntax highlight, auto complete):
+```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
-
-* Enable the plugins:
+Enable the plugins:
 Open the file ~/.zshrc, locate the line that says: plugins=(git). And replace it as: plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-If you want to change back to Bash:
+
+- If you want to change back to Bash:
 ```sh
 chsh -s /bin/bash
+```
+
+--- 
+### Byobu
+* [byobu] How do I change the default shell used in Byobu (tmux)?
+
+Put the following in your $HOME/.byobu/.tmux.conf:
+```conf
+set -g default-shell /usr/bin/zsh
+set -g default-command /usr/bin/zsh
 ```
