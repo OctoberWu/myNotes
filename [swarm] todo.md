@@ -13,6 +13,9 @@ keywords: improvements, todo, missing-features,
 - [ ] robot physical configuration 
 - [v] 長時間大資料量的對策。刪除資料筆數的操作，只保持最近幾筆的資料，超過的筆數，一律刪除。當資料太大，請求超時重覆發出刪除指令時，並不會移除最新的10000筆資料。
 - [v] visNetwork, Multiple event bindings. Have to `off` before binding.
+- [ ] 在pub/sbu，加入ACK。
+- [ ] partially update the chaged info only 
+- [ ] recurring scheduler
 
 ### known issues:
 * when need to do updates, the network has to be set to `host` instead of `bridge`.
@@ -117,3 +120,11 @@ function animate() {
   }
 }
 ```
+
+---
+### Mutli-threading for v8 engine.
+* Napa.js
+
+### Vis-Network linked list model
+* linked-list model:
+* ![](./network_linked_list.png)
