@@ -83,3 +83,37 @@ console.log(res);
 * On Mac `Shift + Option + F`
 * On Linux `Ctrl + Shift + I`
 
+### requestAnimationFrame
+* use requestAnimationFrame to replace `setInterval()`
+
+* far_map_live.js:138
+```js
+let fps = 20;
+let now;
+let then = Date.now();
+let interval = 1000 / fps;
+let delta;
+
+animate();
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  now = Date.now();
+  delta = now - then;
+
+  if (delta > interval) {
+    then = now - (delta % interval);
+
+    if (apiQueryData_ !== undefined && apiQueryData_.hasOwnProperty('fleet_state')) {
+      updateFleetSprites2(apiQueryData_.fleet_state);
+    }
+
+    if (apiQueryData_ !== undefined && apiQueryData_.hasOwnProperty('wms')) {
+      updateVisCellStatus2(apiQueryData_.wms);
+    }
+
+    network_.redraw();
+  }
+}
+```
