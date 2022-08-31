@@ -1,6 +1,34 @@
 keywords: nodejs, typescript, express, restful, postgresql, redis, pm2, typeorm, node-best-practices
 
 ---
+### concepts to start a typescript project
+1. install typescript nodejs packages
+```sh
+$npm i -D typescript ts-node
+```
+
+2. install typescript-version express
+```sh
+$npm i -D @types/express @types/node
+```
+
+3. run directly in typespcript
+```sh
+$npx ts-node app.ts
+```
+
+#### side-note:
+```sh
+# dependencies packages in packages.json
+$npm i --save <pkg_name>
+$npm i -S <pkg_name>
+
+# devDependencies packages in packages.json
+$npm i --save-dev <pkg_name>
+$npm i -D <pkg_name>
+
+```
+
 ### Create a Typscript project
 1. Starting a typescript project 
 ```sh
@@ -13,6 +41,8 @@ $npm i typescript --save-dev
 
 # generate typescript configuration file
 $npx tsc --init
+# or
+$tsc --init
 ## set the typescript compiling configuration
 $vim tsconfig.json
 ```
