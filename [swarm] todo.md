@@ -16,6 +16,7 @@ keywords: improvements, todo, missing-features,
 - [ ] 在pub/sbu，加入ACK。
 - [ ] partially update the chaged info only 
 - [ ] recurring scheduler
+- [ ] browser cache, firefox, fix default settings
 
 ### known issues:
 * when need to do updates, the network has to be set to `host` instead of `bridge`.
