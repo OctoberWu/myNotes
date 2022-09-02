@@ -35,3 +35,7 @@ let bTime = new Date();
 let delta:number = Number(bTime) - Number(aTime);
 ```
 
+### function argument callback 
+
+Argument of type '() => void' is not assignable to parameter of type '() => {}'.
+  Type 'void' is not assignable to type '{}'
