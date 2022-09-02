@@ -3,7 +3,11 @@ keywords: typescript-loader, webpack
 --- 
 ### quick notes:
 1. awesome-typescript-loader > ts-loader
+* issue: 
+  - error message: ![](./webpack_ts_loader.png)
 
+
+* solution: 
 >awesome-typescript-loader is no longer maintained and is not compatible with Webpack 5 (or with recent TypeScript versions). You'll need to remove awesome-typescript-loader, install ts-loader, and change the relevant block in webpack.config.dev.js to:
 
 ```json
