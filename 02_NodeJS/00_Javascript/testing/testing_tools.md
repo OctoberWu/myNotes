@@ -9,3 +9,6 @@ keywords: testing, test-cafe
 
 #### tutorial repo:
 * [moatazeldebsy/TestCafe-TAU ](https://github.com/moatazeldebsy/TestCafe-TAU)
+
+
+#### Write some testing cases by `testcafe`  (https://github.com/DevExpress/testcafe)

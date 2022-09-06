@@ -5,16 +5,6 @@ TODOs:
    [ ] Service (https://docs.ros.org/en/foxy/Tutorials/Custom-ROS2-Interfaces.html)
    [ ] Action 
 
-2. ROS language 
-   [ ] cpp
-   [ ] python
-
-3. Write some testing cases by `testcafe`  (https://github.com/DevExpress/testcafe)
-
-4. Documentation on README
-
-
-
 
 ##### Major
 
