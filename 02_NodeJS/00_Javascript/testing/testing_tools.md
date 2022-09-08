@@ -33,3 +33,9 @@ await t
 	// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ DOM existence check
 ```
 
+### running testcafe
+```js
+$nvm use 16
+$testcafe "chrome '--window-size=1920,1080'" e2e/06_MapEditor_cell_edit.spec.js --skip-js-errors
+```
+
