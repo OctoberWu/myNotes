@@ -18,6 +18,12 @@ keywords: improvements, todo, missing-features,
 - [ ] recurring scheduler
 - [ ] browser cache, firefox, fix default settings
 
+### issues:
+- 不夠清晰、穩定的通訊協議。
+- 不具可規模化的軟體架構設計
+- 商業模式不明確
+- 行業利潤率過低
+
 ### known issues:
 * when need to do updates, the network has to be set to `host` instead of `bridge`.
 	- directory: farobot_dev_env > docker-services > base_service > base-service.yml.	
