@@ -1,4 +1,4 @@
-keywords: testing, test-cafe
+keywords: testing, test-cafe, cross pages
 
 ---
 
@@ -89,4 +89,21 @@ $testcafe "chrome '--window-size=1920,1080'" e2e/01_Dashboard_flow.test.js --ski
   "selectorTimeout": 3000,                 // 尋找網頁元素的 timeout 時間 3 秒
   "assertionTimeout": 3000                 // 判定預期結果的 timeout 時間 3 秒
 }
+```
+
+### testcafe, cross-page validation
+ * 與點選alert prompt 視窗相同，切換不同頁面時，也需先下 `setNativeDialogHandler()`
+```js
+	await t
+		.setNativeDialogHandler(() => true)
+		.navigateTo(`http://${hostIP}:3000/operation.html`)
+		.wait(10000);
+```
+
+* example1: click with alert box prompted.
+```js 
+  await t
+		.wait(1000)
+		.setNativeDialogHandler(() => true)
+		.click('#save-flow-div');
 ```
