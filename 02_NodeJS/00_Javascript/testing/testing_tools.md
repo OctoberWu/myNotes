@@ -107,3 +107,7 @@ $testcafe "chrome '--window-size=1920,1080'" e2e/01_Dashboard_flow.test.js --ski
 		.setNativeDialogHandler(() => true)
 		.click('#save-flow-div');
 ```
+
+### testcafe 產生文件工具
+* [testcafe-reporter-html](https://www.npmjs.com/package/testcafe-reporter-html)
+* [testcafe-reporter-cucumber-json](https://www.npmjs.com/package/testcafe-reporter-cucumber-json)
