@@ -1,3 +1,6 @@
+keywords: farobot_installation
+
+---
 ### Steps to update swarm binaries install
 1. Download the lastest binary files
 2. Back-up / Remove the original install folders
