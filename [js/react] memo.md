@@ -15,11 +15,14 @@ keywords: vs_code_plugins
 2. html to JSX (v0.0.1)
 
 6. create new react app
+```sh
 $npm install -g create-react-app
 $create-react-app admin-app-demo
 $npm install admin-lte --save
+```
 
----
-copy dist and pugin folders to public
----
+7. copy dist and pugin folders to public
+> replace url with `%PUBLIC_URL%` by prefix
 
+
+8. copy components(`Header`, `Menu`, `Dashboard`,`Footer`) to `/src` folder
