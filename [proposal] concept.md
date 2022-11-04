@@ -10,3 +10,14 @@ Proposal
 3. 設計電梯，或切換轉換點。改用圖形化獲取向量。
 ### idea:
 use `knob` to indicate the oriention, so that could make the linear transformation calculation.
+
+keywords: connectivity 
+
+data 
+data + time + space = message
+message + life span = state
+data + message + state = connectivity
+
+interactivity
+reactivity
+connectivity
