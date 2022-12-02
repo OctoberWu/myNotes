@@ -1,3 +1,10 @@
+### Go-lang installation
+1. installation
+```sh 
+sudo apt update
+sudo apt install golang-go
+```
+
 ### Go-lang Scheduler alternative
 * [kala](https://github.com/ajvb/kala)
 

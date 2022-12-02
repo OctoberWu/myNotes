@@ -30,14 +30,23 @@ keywords: JQuery
 ```js
 // e ---> Event
 // JQuery
-    let selVal = $(e.target).find(':selected');
-    for (let opt of selVal) {
-      let c = $(opt).data();
-    };
+  let selVal = $(e.target).find(':selected');
+  for (let opt of selVal) {
+    let c = $(opt).data();
+  };
 
 // Native Web-API
-    let selVal = e.target.selectedOptions;
-    for (let opt of selVal) {
-      let c = opt.dataset.connCell;
-    }
+  let selVal = e.target.selectedOptions;
+  for (let opt of selVal) {
+    let c = opt.dataset.connCell;
+  }
+```
+
+4. remove the node itself
+```js
+// JQuery
+  $('<selector>').remove();
+
+// Native Web-API
+  node.remove();
 ```

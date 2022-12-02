@@ -1,4 +1,4 @@
-keywords: read-timeout
+keywords: read-timeout, docker-reference
 
 ---
 ### quick note:
@@ -23,6 +23,13 @@ sudo vim /etc/profile
 export DOCKER_CLIENT_TIMEOUT=500
 export COMPOSE_HTTP_TIMEOUT=500
 # rerun docker-compose
+```
+
+---
+### docker reference
+```sh
+docker images --filter=reference='myDocker*:*dev'
+docker rmi $(docker images --filter=reference="farobot_dev_env*:latest")
 ```
 
 
