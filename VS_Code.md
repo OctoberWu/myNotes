@@ -1,3 +1,7 @@
+keywords: workspace-storage
+
+---
+
 ### VS Code installation
 * First, update the packages index and install the dependencies by typing:
 ```console
@@ -21,3 +25,10 @@ $sudo apt install code
 ** ref **
 [VS Code Installation](https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/)
 
+---
+### VS Code Workspace storage
+> Directly remove the folder 
+```text
+directory: 
+/home/sc/.config/Code/User/workspaceStorage/
+```
