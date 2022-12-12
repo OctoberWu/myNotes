@@ -1,4 +1,12 @@
-keywords: 
+keywords:  react_ui, golang-url-prefix
+
+---
+golangj 的 RESTful api，需要移除prefix。 避免請求的url帶有多餘url
+
+---
+case: 
+切換react_ui資料夾後, package_lock.json已不一致。
+需移除 node_modules and package_lock.json 檔案後， $npm i 再安裝一次
 
 --- FAQ
 ### Q: Select all child elements 

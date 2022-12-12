@@ -18,6 +18,7 @@ keywords: improvements, todo, missing-features,
 - [ ] recurring scheduler
 - [ ] browser cache, firefox, fix default settings
 - [] system manager. in each node, implement a toggle to toggle message topics, use a manager to manage
+- [] UI RESTful API, access_token not read in user input, by hard-code default
 
 ### issues:
 - 不夠清晰、穩定的通訊協議。
