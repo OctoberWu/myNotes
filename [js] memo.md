@@ -2,7 +2,7 @@
 `.closest()` method only traverses parents, not children.
 
 ---
-### Add property to an array of objects
+### Add attributes to an array of objects
 > `Use Array.prototype.map()`
 ```js
 const userList = [
