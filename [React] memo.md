@@ -20,3 +20,13 @@ const { useState } = React; // 透過物件的解構賦值把 useState 方法取
 Read: useQuery
 Create/Update/Delete: useMutation
 ```
+
+
+### useHistory
+> Export 'useHistory' was not found in react-router-dom
+```
+* To solve the error "export 'useHistory' (imported as 'useHistory') was not found in 'react-router-dom'", use the useNavigate hook instead, e.g. const navigate = useNavigate(). The hook returns a function that lets you navigate programmatically.
+* useLocation, with arguments
+```
+
+
