@@ -11,3 +11,12 @@ useState 這個方法是放在 React 物件裡面的一個方法，所以要使�
 React.useState(); // 直接透過 `.` 來取用 React 物件內的方法
 const { useState } = React; // 透過物件的解構賦值把 useState 方法取出
 ```
+
+--- 
+### useQuery
+>The difference is the flow of data. useQuery is used to query async data, useMutation is used to mutate it. Or in the traditional CRUD speak:
+
+```
+Read: useQuery
+Create/Update/Delete: useMutation
+```
