@@ -2,7 +2,7 @@
 `.closest()` method only traverses parents, not children.
 
 ---
-### Add attributes to an array of objects
+### Add attributes to an array of objects (Immutable object)
 > `Use Array.prototype.map()`
 ```js
 const userList = [
@@ -10,6 +10,4 @@ const userList = [
     {name: 'Jennifer Smith', age: 20}
 ];
 const modifiedUserList = userList.map(userObj => ({ ...userObj, status: 'active' }));
-console.log(userList);
-console.log(modifiedUserList);
 ```

@@ -63,19 +63,6 @@ etc/udev/rules.d
 
 ---
 
-### 受眾的資訊切入點。
-細節描述，工作內容陳述、任務分配
-
-下禮拜的 software proposal scenario的整合
-前因，產品roadmap。
-策略性的陳述。 
-Demo 
-
-Tech Day 討論
-https://youtu.be/tixx0WYbAcw
-
----
-
 action items:
 * Thur. List all requests.
 * lidar 角度的問題
@@ -120,7 +107,6 @@ v0.3
 
 
 ---
-
 ### procedure of making robot (Software Verification)
 1. autonomous part
 2. V-shape develope

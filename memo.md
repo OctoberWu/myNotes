@@ -52,7 +52,7 @@ if (empty !== 0 && empty !== x.length) {
 --- 
 ### DOM on Browser 心得
 > Tree, Linked List 無所不在
-* DOM, Document Of Model. 是術的結構存在。在Browser上，都是文件，也都是一個Node, 透過階層關係，描述 node 與 node 之間的關聯。
+* DOM, Document Of Model. 是樹的結構存在。在Browser上，都是文件，也都是一個Node, 透過階層關係，描述 node 與 node 之間的關聯。
 * 可以在 Web API 可窺見
   * querySelector(), querySelectorAll()
   * getElmentById(), getElementsByTagName(), etc...
@@ -107,11 +107,8 @@ M600C和M1000C作为平台型机器人，其顶部支持搭载其他设备，且
 在智能性上，支持多种导航方式（激光SLAM、视觉SLAM、视觉二维码等）的灵活选择，满足几乎所有工业场景的需求。同时，智能绕障、智能语音交互等功能极大的提升了人机交互能力。值得一提的是，机器人自身重量均小于100kg，载重最大分别可达700kg和1100kg，做到了能效的最大化。
 
 
-​[7/30 9:45 PM] Ryan JB Chen
 平台型产品设计及专用的组件接口，可支持多种上部定制模块控制，解锁更多应用场景，完美适配以电气/电子制造行业为代表的劳动密集型行业各种物流需求。
-​[7/30 9:45 PM] Ryan JB Chen
 M1000T标配360°对角激光，最大行驶速度可达1.5m/s
-​[7/30 9:46 PM] Ryan JB Chen
 据了解，极智嘉全线搬运机器人均配备“智能大脑”机器人管理器（Robot Manager），可在没有调度系统的情况下单独使用，Robot Manager具备极高的易用性和扩展能力，帮助实施人员在15分钟之内进行单机的快速部署，极大的降低了对实施人员的要求并缩短了部署时间，进而降低成本。
 
 Restful API (IT guy)

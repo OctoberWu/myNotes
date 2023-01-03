@@ -1,5 +1,31 @@
-keywords: vs_code_plugins
+keywords: vs_code_plugins, async_setState 
 
+### 
+Programmatically Add Input Fields to React Forms
+dynamically field
+create dynamically form
+
+--- 
+### setState() is async function
+> Problem
+```
+To update the state of a component, you use the setState method. 
+However it is easy to forget that the setState method is **asynchronous**, causing tricky to debug issues in your code. 
+The setState function also does not return a Promise. 
+Using async/await or anything similar will not work.
+```
+
+> Solution
+When the state is actually set can vary. 
+Usually it happens on the next render, but it can sometimes be batched for performance. 
+The setState function takes an optional callback parameter that can be used to make updates after the state is changed.
+```js
+handleButtonClicked = evt => {
+    this.setState({name: evt.currentTarget.value}, () => {
+        this.props.callback(this.state.name)
+    })
+}
+```
 
 
 ---
