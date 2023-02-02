@@ -71,9 +71,9 @@ services:
 docker run -d --name myc keeprun <ENTRY_POINT>
 docker run -d --name myc keeprun tail -f /dev/null
 ```
-
 ### docker-compose memo
 1. Build a customized (self-made) image to run a container 
+   * 指定Dockerfile的路徑位置
 2. Run the docker container without running any command as a way for development
 
 ```yml
@@ -81,10 +81,10 @@ version: '3'
 services: 
   dev: 
     # image: node:16 # <<< pull image from the remote
-    build: .         # <<< build the local Dockerfile as a image
+    build: .         # <<< build the local Dockerfile as a image, 指定Dockerfile的路徑位置.
     volumes: 
       - .:/usr/src/service
-    working_dir: /usr/src/service
+    working_dir: /usr/src/service # <<< create working_dir
     # command: bash -c "npm install && npm run dev"
     command: bash # <<< launch bash as a prompt
 ```
