@@ -12,7 +12,12 @@ docker-compose up -d client
 docker-compose run <service_container>
 # bind port的版本參考上面。
 ```
-
+```sh
+# template: 
+docker-compose -f <docker-compose-yml-filename> up -d <service-name> 
+# ex. 
+docker-compose -f docker-compose.dev.yml up -d app
+```
 
 ### Get the IP address of docker container
 ```
