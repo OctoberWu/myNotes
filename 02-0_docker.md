@@ -1,4 +1,19 @@
 
+### docker-compose up for only certain containers
+```sh
+# template: 
+docker-compose up -d <service_container>
+# ex. 
+docker-compose up -d client
+```
+### footnote: 如果跑單個contain 沒有加 `-d`, ports不會被綁定到本機。
+```sh 
+# 沒有bind port的版本
+docker-compose run <service_container>
+# bind port的版本參考上面。
+```
+
+
 ### Get the IP address of docker container
 ```
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' swarm_core_service

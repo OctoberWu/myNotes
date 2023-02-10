@@ -29,4 +29,10 @@ Create/Update/Delete: useMutation
 * useLocation, with arguments
 ```
 
+### Queueing a Series of State Updates 
+reference: https://beta.reactjs.org/learn/queueing-a-series-of-state-updates
+* batching: react batches state updates
+> 當Component中，有多個setState()函數同時存在時，以最後一個為主。
+> 當想要每個state的更新都被調用，則以函數形式傳入setState()中。
+
 
