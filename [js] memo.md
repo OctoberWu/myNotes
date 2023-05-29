@@ -11,3 +11,8 @@ const userList = [
 ];
 const modifiedUserList = userList.map(userObj => ({ ...userObj, status: 'active' }));
 ```
+
+### If you want to open link in a new tab:
+```html
+<a href="https://example.com" target="_blank">some text</a>
+```

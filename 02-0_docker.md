@@ -1,4 +1,10 @@
 
+
+### docker
+```sh
+docker run -v /var/run/docker.sock:/var/run/docker.sock -it alpine sh
+```
+
 ### docker-compose up for only certain containers
 ```sh
 # template: 
